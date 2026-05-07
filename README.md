@@ -1,65 +1,61 @@
-💀 BillyBinder v2.0 | Advanced Stealth Payload Hub
-<p align="center"> <img src="https://img.shields.io/github/v/release/votre-pseudo/BillyBinder?color=00bfff&style=for-the-badge" alt="Release"> <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python" alt="Python"> <img src="https://img.shields.io/badge/Security-FUD_Engine-red?style=for-the-badge" alt="Security"> </p>
-🌑 Overview
+💀 BillyBinder v2.0 | The Ultimate Stealth Payload Hub
+BillyBinder n'est pas un simple compilateur. C'est un moteur de fusion binaire (Binder) de nouvelle génération, conçu pour les opérateurs qui exigent discrétion et efficacité. Il permet d'agréger vos outils (RAT, Stealers, Keyloggers) derrière des vecteurs d'apparence légitime tout en brisant les analyses statiques.
 
-BillyBinder est un moteur de fusion binaire (binder) de nouvelle génération, conçu pour centraliser et empaqueter plusieurs composants dans un seul exécutable.
+⚡ Caractéristiques Opérationnelles
+🌑 Stealth Binding Engine
+Ne vous contentez pas de joindre deux fichiers. BillyBinder crée un conteneur chiffré en Base64 qui isole vos composants :
 
-Son architecture met l’accent sur :
+Core Server : Votre charge utile principale.
 
-la discrétion d’exécution
-la modularité
-et l’automatisation des builds complexes
+Decoy/Launcher : Le script de diversion (.bat, .py, .exe) qui s'exécute aux yeux de la cible.
 
-Il permet d’assembler différents éléments (payload principal, fichier leurre, ressources) au sein d’un package unique avec une logique d’exécution structurée.
+Assets Bundle : L'intégralité de votre dossier src est packagé et auto-extrait via un UUID unique dans les répertoires temporaires du système.
 
-⚡ Core Features
-🛡️ FUD Engine (Obfuscation & Evasion Layer)
-Entropy Injection
-Modification dynamique de la structure du code via ajout de bruit syntaxique (espaces, commentaires, variations) afin de limiter la détection basée sur signatures statiques.
-Armor Shield (PyArmor Integration)
-Protection du code source via obfuscation avancée pour compliquer l’analyse et la rétro-ingénierie.
-🖇️ Deep Binding System
-Multi-Layer Fusion
-Fusion d’un binaire principal, d’un fichier leurre (decoy) et de ressources additionnelles dans un package unique.
-UUID-based Isolation
-Génération d’un environnement temporaire unique pour chaque build, renforçant l’isolation et la discrétion à l’exécution.
+🛡️ FUD Defense Stack (Anti-AV / Anti-EDR)
+Le "Static Analysis" est l'ennemi. BillyBinder intègre deux couches de défense :
+
+Morphing de Signature (Entropy Injection) : Basé sur la logique de TEST.py, le moteur injecte du bruit AST, des commentaires aléatoires et des espaces fantômes pour modifier radicalement le hash du fichier à chaque build.
+
+Armor Shield : Intégration native de PyArmor. Votre stub devient une boîte noire illisible pour les reverse-engineers.
+
 🖥️ Cyber-UI Dashboard
-Dynamic Terminal (Matrix Style)
-Interface console enrichie avec logs en temps réel et coloration syntaxique.
-Real-time Resource Monitoring
-Suivi de l’utilisation CPU/RAM durant les phases de compilation.
-Project Persistence
-Sauvegarde automatique des configurations et chemins pour une reprise rapide des projets.
+Oubliez les interfaces Windows classiques. BillyBinder propose :
+
+Un Terminal Temps Réel avec coloration syntaxique des logs.
+
+Un Moniteur de Ressources pour surveiller l'impact du build sur le CPU/RAM.
+
+Un Historique des Projets pour relancer vos opérations en un clic.
+
 🛠️ Installation
-1. Cloner le projet
+Bash
+# Clone le repo
 git clone https://github.com/votre-pseudo/BillyBinder.git
+
+# Accède au dossier
 cd BillyBinder
-2. Installer les dépendances
+
+# Installe les dépendances critiques
 pip install customtkinter pyarmor pyinstaller
-3. Lancer l'application
-python billy_binder.py
-🚀 Workflow
-Core
-Importez votre fichier principal (binaire ou script).
-Decoy
-Ajoutez un fichier de couverture (installateur, document, etc.).
-Secure
-Activez les options d’obfuscation et de transformation.
-Compile
-Cliquez sur GENERATE PACKAGE
-→ Le build final est généré dans /dist.
-⚠️ Disclaimer
+🚀 Workflow d'Utilisation
+Input : Chargez votre binaire (.exe) ou script (.py).
 
-Cet outil est destiné exclusivement à :
+Decoy : Sélectionnez le fichier qui servira de couverture (ex: un installeur ou un script utilitaire).
 
-la recherche en sécurité
-les tests d’intrusion autorisés
-les environnements pédagogiques
+Obfuscate : Activez le mode PyArmor et l'Entropie dans les paramètres.
 
-Toute utilisation sans consentement explicite de la cible est illégale.
-L’auteur décline toute responsabilité en cas de mauvaise utilisation.
+Deploy : Cliquez sur GENERATE PACKAGE. Le résultat se trouve dans le dossier /dist.
 
-"With great power comes great responsibility." 💀
+⚠️ Clause de Non-Responsabilité (Disclaimer)
+Cet outil est développé à des fins de tests d'intrusion et d'éducation uniquement. L'utilisation de BillyBinder contre des cibles sans autorisation préalable est illégale. L'auteur décline toute responsabilité quant à l'usage malveillant de ce logiciel.
 
-📸 Preview
-<p align="center"> <img src="preview.png" alt="BillyBinder UI Preview" width="900" style="border-radius: 10px;"> </p> <p align="center"> <img src="preview2.png" alt="BillyBinder UI Preview" width="900" style="border-radius: 10px;"> </p>
+"With great power comes great responsibility."
+
+🤝 Contribution & Support
+Vous avez une idée pour améliorer le bypass ? Ouvrez une Issue ou proposez une Pull Request.
+<p align="center">
+  <img src="preview.png" alt="BillyBinder Preview" width="650">
+</p>
+<p align="center">
+  <img src="preview2.png" alt="BillyBinder Preview" width="650">
+</p>
