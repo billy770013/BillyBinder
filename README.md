@@ -30,7 +30,7 @@ Un Historique des Projets pour relancer vos opérations en un clic.
 🛠️ Installation
 Bash
 # Clone le repo
-git clone https://github.com/votre-pseudo/BillyBinder.git
+git clone [https://github.com/votre-pseudo/BillyBinder.git](https://github.com/billy770013/BillyBinder.git)
 
 # Accède au dossier
 cd BillyBinder
