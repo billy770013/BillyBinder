@@ -1,4 +1,9 @@
-💀 BillyBinder v2.0 | The Ultimate Stealth Payload Hub
+💀 BillyBinder v2.0 
+<p align="center">
+  <img src="https://img.shields.io/github/v/release/votre-pseudo/BillyBinder?color=00bfff&style=for-the-badge" alt="Release">
+  <img src="https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Security-FUD_Engine-red?style=for-the-badge" alt="Security">
+</p>
 BillyBinder n'est pas un simple compilateur. C'est un moteur de fusion binaire (Binder) de nouvelle génération, conçu pour les opérateurs qui exigent discrétion et efficacité. Il permet d'agréger vos outils (RAT, Stealers, Keyloggers) derrière des vecteurs d'apparence légitime tout en brisant les analyses statiques.
 
 ⚡ Caractéristiques Opérationnelles
